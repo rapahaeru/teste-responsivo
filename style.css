@@ -13,7 +13,7 @@ h1 {/*font-size: 32px;*/ font-size: 2em;} /*32/16 = 2*/
 			.last-content-call {
 				float: left;
 				margin: 2.5295% 2.5295% 2.5295% 0; /*15/593 = 0.025295 (*100)*/ 
-				/*width: 280px;*/ width: 47.2175; /*280/593 = 0.472175 (*100)*/} 
+				/*width: 280px;*/ width: 47.2175%; /*280/593 = 0.472175 (*100)*/} 
 				.last-content-call .secondary-title {margin-bottom: 0;}
 				.last-content-call .brief {/*margin: 5px;*/ margin: 1.7857%; /*5/280 = 0.0178571 (*100)*/ }
 .content-sidebar{
@@ -44,4 +44,21 @@ h1 {/*font-size: 32px;*/ font-size: 2em;} /*32/16 = 2*/
 	margin: 1.5625% 0;/* 15/960*/
 	padding: 1.5625%; /* 15/960*/
 	text-align: center; 
-	width: 100%;}		
+	width: 100%;}
+
+/*@media all and (max-width: 320px){
+	.main-nav li {
+		float: none;
+		width: auto;
+	}
+}*/
+
+@media all and (max-width: 640px){
+	.content-main {float: none;}
+	.last-content-call {float: none; width: auto;}
+	.content-sidebar {float: none; clear: both;}
+	.main-nav li {
+		float: none;
+		width: auto;
+	}	
+}
